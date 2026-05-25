@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.cnpj-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 32px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); 
+}
+
+.cnpj-title {
+  text-align: center;
+  color: #1e293b;
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.cnpj-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.cnpj-input {
+  flex: 1;
+  padding: 14px 16px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.cnpj-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15); 
+}
+
+.cnpj-button {
+  padding: 14px 28px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cnpj-button:hover:not(:disabled) {
+  background-color: #2563eb;
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.3);
+}
+
+.cnpj-button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.cnpj-error {
+  color: #b91c1c;
+  background-color: #fef2f2;
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #fecaca;
+}
+
+.cnpj-results {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 24px;
+  border-radius: 12px;
+  animation: deslizarSuave 0.4s ease-out; 
+}
+
+@keyframes deslizarSuave {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.cnpj-results h3 {
+  margin-top: 0;
+  color: #0f172a;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.cnpj-results p {
+  margin: 14px 0;
+  color: #475569;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column; 
+  gap: 4px;
+}
+
+.cnpj-results strong {
+  color: #64748b;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
